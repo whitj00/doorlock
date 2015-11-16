@@ -7,39 +7,30 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         
-        <!-- Add your site or application content here -->
         <div id="bitcoin-address-template" class="bitcoin-address-container" style="display: none">
-
-            <div>
-                <span class="bitcoin-address"></span>
-            </div>
-            <a href="#" class="bitcoin-address-action bitcoin-address-action-qr" id="qr">
-                <i class="fa fa-qrcode"></i>
-                QR code
-            </a>
-
-            <div class="bitcoin-action-hint bitcoin-action-hint-qr">
-                <div class="bitcoin-address-qr-container">
+            <div class="jumbotron">
+                <div>
+                    <span class="bitcoin-address"></span> (.001 BTC)
+                </div>
+                <a href="#" class="btn btn-default bitcoin-address-action bitcoin-address-action-qr" role="button">QR Code</a>
+                <br><br>
+                <div class="bitcoin-action-hint bitcoin-action-hint-qr">
+                    <div class="bitcoin-address-qr-container">
+                    </div>
                 </div>
             </div>
         </div>
         <strong class="bitcoin-address" data-bc-address="19356KxTs9Bw5AAdxens5hoxDSp5bsUKse" data-bc-amount="0.001"></strong>
-
-</div>
-
+        <br><br>
+        <a href="#" class="btn btn-info" onclick="location.reload()" role="button">Reload</a>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/vendor/qrcode.min.js"></script>
